@@ -15,5 +15,6 @@ namespace ClassRoom
 
         public DateTime SemesterStart { get; set; }
 
+
     }
 }
