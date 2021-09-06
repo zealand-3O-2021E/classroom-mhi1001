@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -38,6 +39,12 @@ namespace ClassRoom
             Console.WriteLine($"\n{s2.Name} - {s2.Season(s2.BirthMonth)}");
             Console.WriteLine($"\n{s3.Name} - {s3.Season(s3.BirthMonth)}");
             Console.WriteLine($"\n{s4.Name} - {s4.Season(s4.BirthMonth)}");
+
+
+            cs201.BirthdayPerSeason();
+
+            Student s5 = new Student("Error", 12, 30);
+            s5.BirthMonth = 30;
 
             Console.ReadLine();
         }

@@ -29,6 +29,13 @@ namespace ClassRoom
         public int BirthMonth
         {
             get { return _birthMonth; }
+            set
+            {
+                if (value >= 1 && value <= 12)
+                    _birthMonth = value;
+                else
+                    throw new ArgumentException("Invalid month");
+            }
         }
 
         public int BirthDay
@@ -43,7 +50,6 @@ namespace ClassRoom
             {
                 case int n when (n >= 1 && n <= 2 || n == 12):
                     return "Winter";
-
                 case int n when (n >= 3 && n <= 5):
                     return "Spring";
                 case int n when (n >= 6 && n <= 8):
