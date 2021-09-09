@@ -50,14 +50,18 @@ namespace ClassRoom
             {
                 case int n when (n >= 1 && n <= 2 || n == 12):
                     return "Winter";
+
                 case int n when (n >= 3 && n <= 5):
                     return "Spring";
+
                 case int n when (n >= 6 && n <= 8):
                     return "Summer";
+
                 case int n when (n >= 9 && n <= 11):
                     return "Autumn";
+
                 default:
-                    return "Invalid";
+                    return "Invalid Month";
 
             }
             
